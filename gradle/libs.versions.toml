@@ -1,0 +1,101 @@
+[versions]
+protobuf = "3.15.8"
+simpleJavaMail = "6.5.2"
+
+[libraries.jetbrains-annotations]
+module = "org.jetbrains:annotations"
+version = "20.1.0"
+
+[libraries.log4j-bom]
+module = "org.apache.logging.log4j:log4j-bom"
+version = "2.14.1"
+
+[libraries.log4j-api]
+module = "org.apache.logging.log4j:log4j-api"
+
+[libraries.log4j-core]
+module = "org.apache.logging.log4j:log4j-core"
+
+[libraries.log4j-slf4jImpl]
+module = "org.apache.logging.log4j:log4j-slf4j-impl"
+
+[libraries.guava]
+module = "com.google.guava:guava"
+version = "30.1.1-jre"
+
+[libraries.fluentResult]
+module = "no.gorandalum:fluent-result"
+version = "1.5.0"
+
+[libraries.reactor-bom]
+module = "io.projectreactor:reactor-bom"
+version = "2020.0.6"
+
+[libraries.reactor-core]
+module = "io.projectreactor:reactor-core"
+
+[libraries.reactor-test]
+module = "io.projectreactor:reactor-test"
+
+[libraries.directories]
+module = "dev.dirs:directories"
+version = "26"
+
+[libraries.jackson-bom]
+module = "com.fasterxml.jackson:jackson-bom"
+version = "2.12.3"
+
+[libraries.jackson-databind]
+module = "com.fasterxml.jackson.core:jackson-databind"
+
+[libraries.jackson-dataformat-properties]
+module = "com.fasterxml.jackson.dataformat:jackson-dataformat-properties"
+
+[libraries.rome-core]
+module = "com.rometools:rome"
+version = "1.15.0"
+
+[libraries.mapdb]
+module = "org.mapdb:mapdb"
+version = "3.0.8"
+
+[libraries.simpleJavaMail-core]
+module = "org.simplejavamail:simple-java-mail"
+version.ref = "simpleJavaMail"
+
+[libraries.simpleJavaMail-batch]
+module = "org.simplejavamail:batch-module"
+version.ref = "simpleJavaMail"
+
+[libraries.simpleJavaMail-dkim]
+module = "org.simplejavamail:dkim-module"
+version.ref = "simpleJavaMail"
+
+[libraries.simpleJavaMail-smime]
+module = "org.simplejavamail:smime-module"
+version.ref = "simpleJavaMail"
+
+[libraries.protobuf-bom]
+module = "com.google.protobuf:protobuf-bom"
+version.ref = "protobuf"
+
+[libraries.protobuf-core]
+module = "com.google.protobuf:protobuf-java"
+
+[libraries.protobuf-protoc]
+module = "com.google.protobuf:protoc"
+version.ref = "protobuf"
+
+[libraries.junit-bom]
+module = "org.junit:junit-bom"
+version = "5.7.1"
+
+[libraries.junit-jupiter-api]
+module = "org.junit.jupiter:junit-jupiter-api"
+
+[libraries.junit-jupiter-engine]
+module = "org.junit.jupiter:junit-jupiter-engine"
+
+[libraries.truth]
+module = "com.google.truth:truth"
+version = "1.1.2"

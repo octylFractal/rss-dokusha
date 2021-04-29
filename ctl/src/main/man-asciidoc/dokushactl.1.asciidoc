@@ -1,0 +1,53 @@
+= DOKUSHACTL(1)
+:doctype: manpage
+
+
+== NAME
+dokushactl - Control the rss-dokusha daemon
+
+
+== SYNOPSIS
+*dokushactl*
+
+
+== DESCRIPTION
+The dokushactl(1) command manages the configuration for the
+rss-dokusha daemon, and automatically informs the daemon of the
+changes.
+
+
+== OPTIONS
+*-h, --help*::
+Print help for the command.
+
+*--version*::
+Print program version number.
+
+== EXAMPLES
+
+
+== EXIT STATUS
+*0*::
+Success
+
+*1*::
+Failure (syntax or usage error; configuration error;
+unexpected error).
+
+
+== FILES
+dokushactl uses the directories defined by
+https://github.com/dirs-dev/directories-jvm.
+
+Configuration is stored in the `configDir`. The primary configuration file
+is `config.properties`, which is not reloaded automatically. Email sinks are
+configured in `email-sinks.d`, each folder is named with the ID of the sink.
+In each sink folder, there is an `email-message.properties` for the email
+message configuration, an `smtp-server.properties` for the SMTP server, and
+an `rss-sources.d` folder for every RSS feed that is sent to this sink.
+Each file in the sources folder is named with the ID of the source plus
+`.properties`, and contains the configuration for the feed.
+
+
+== SEE ALSO
+dokushad(1)

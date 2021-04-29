@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package net.octyl.rss.dokusha.comm;
+option java_multiple_files = true;
+option java_package = "net.octyl.rss.dokusha.comm.protos";
+
+import "google/protobuf/any.proto";
+
+message IpcMessage {
+  oneof inner {
+    ConfigUpdated configUpdated = 1;
+  }
+}
+
+message ConfigUpdated {
+}
